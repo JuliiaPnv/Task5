@@ -3,10 +3,9 @@ using namespace std;
 int main()
 {
 	int N=1, F, a, b, c;
-	setlocale(LC_ALL, "Rus");
 	for (N; N < 11; N++) 
 	{
-		cout << "введите F (от 1)= ";
+		cout << "enter F (from 1)= ";
 		cin >> F;
 		a = 0;
 		b = 1;
@@ -15,7 +14,7 @@ int main()
 		{
 			if (F == b)
 			{
-				cout << "Фибоначчи"<<endl;
+				cout << "Fibonacci"<<endl;
 				break;
 			}
 			c = a + b;
@@ -23,12 +22,12 @@ int main()
 			b = c;
 			if (F == c)
 			{
-				cout << "Фибоначчи"<<endl;
+				cout << "Fibonacci"<<endl;
 				break;
 			}
 			if (F < c)
 			{
-				cout << "Увы"<<endl;
+				cout << "Alas"<<endl;
 				break;
 			}
 		}	
